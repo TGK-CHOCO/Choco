@@ -1,0 +1,51 @@
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.heart-container {
+    margin-bottom: 30px;
+}
+
+/* Heart Icon styling */
+.heart-icon {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.heart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Gallery styling - Initially hidden */
+.gallery {
+    display: none;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
